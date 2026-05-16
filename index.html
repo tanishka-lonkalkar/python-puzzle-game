@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Python Puzzle Quest</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Python Puzzle Quest</h1>
+
+    <div class="score">Score: <span id="score">0</span></div>
+
+    <div class="levels">
+        <button onclick="startLevel('easy')">Easy</button>
+        <button onclick="startLevel('medium')">Medium</button>
+        <button onclick="startLevel('hard')">Hard</button>
+    </div>
+
+    <div class="quiz-box">
+        <h2 id="question">Select Level to Start</h2>
+        <div id="options"></div>
+        <p id="msg"></p>
+    </div>
+
+    <div class="puzzle hidden">
+        <h2>Connect Matching Colors</h2>
+
+        <div id="grid" class="grid"></div>
+
+        <button onclick="generatePuzzle()">Reset Puzzle</button>
+        <button id="nextBtn" class="hidden">Next Question</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
